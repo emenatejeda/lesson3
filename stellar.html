@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		body {
+			margin: 0;
+		}
+
+		.photo	{
+			height: 600px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		 }
+
+		#rocket {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+
+		}
+
+		.summer	{
+			background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/summer.jpg);
+		}
+
+		.winter	{
+			background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/autumn.jpg);
+		}
+
+		.autumn	{
+			background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/winter.jpg);
+		}
+
+		.spring	{
+			background-image: url(http://markdalgleish.com/projects/stellar.js/demos/images/spring.jpg);
+		}
+
+
+		
+		</style>
+</head>
+<body>
+	<div class="photo summer" data-stellar-background-ratio="0.3"></div>
+	<div class="photo winter" data-stellar-background-ratio="0.9"></div>
+	<div class="photo autumn" data-stellar-background-ratio="0.4"></div>
+	<div class="photo spring" data-stellar-background-ratio="0.4"></div>
+
+	<img id="rocket" src="img/rocket.png" data-stellar-ratio="3.0">
+
+	<script   src="http://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+
+		$.stellar();
+
+	});
+	
+	</script>
+</body>
+</html>
